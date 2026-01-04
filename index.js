@@ -123,7 +123,7 @@ async function run() {
         const result = await serviceCollection
           .find()
           .sort({ "service_rating.rating": -1 })
-          .limit(6)
+          .limit(8)
           .toArray();
         res.send(result);
       } catch (err) {
